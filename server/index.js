@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3000;
 
 const _dirname = path.resolve();
 const allowedOrigins = [
-  // production
+  "https://learnify-neon-eight.vercel.app", //production
   "http://localhost:5173", // local dev
 ];
 //default middlewares
