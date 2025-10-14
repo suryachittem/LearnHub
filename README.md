@@ -68,7 +68,7 @@ STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
 First, clone the project to your local machine and navigate into the main directory.
 
 ```bash
-git clone [https://github.com/yourusername/learnify.git](https://github.com/yourusername/learnify.git)
+git clone [https://github.com/Sreenu-y/Learnify.git](https://github.com/Sreeny-y/Learnify.git)
 cd learnify
 
 ```
