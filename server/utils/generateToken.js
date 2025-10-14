@@ -9,7 +9,7 @@ export const generateToken = (res, user, message) => {
     .status(200)
     .cookie("token", token, {
       httpOnly: true,
-      secure: true, // ✅ required for cross-site cookies
+      secure: false, // ✅ required for cross-site cookies
       sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000,
     })

@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const COURSE_PURCHASE_API =
-  "https://learnify-0qn6.onrender.com/api/v1/purchase";
+  "https://learnify-1-263m.onrender.com/api/v1/purchase";
 
 export const purchaseApi = createApi({
   reducerPath: "purchaseApi",
