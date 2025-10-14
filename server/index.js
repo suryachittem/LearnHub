@@ -1,0 +1,46 @@
+import express from "express";
+import dotenv from "dotenv";
+import connectDB from "./database/db.js";
+import userRouter from "./routes/user.route.js";
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import courseRouter from "./routes/course.route.js";
+import mediaRoute from "./routes/media.route.js";
+import purchaseCourseRouter from "./routes/purchaseCourse.route.js";
+import courseProgressRouter from "./routes/courseProgress.route.js";
+
+dotenv.config({});
+connectDB();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+//default middlewares
+
+app.use(express.json());
+app.use(cookieParser());
+const allowedOrigins = [
+  "https://learnify-omega-rosy.vercel.app", // production
+  "http://localhost:5173", // local dev
+];
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
+
+// api's
+app.use("/api/v1/media", mediaRoute);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/course", courseRouter);
+app.use("/api/v1/purchase", purchaseCourseRouter);
+app.use("/api/v1/progress", courseProgressRouter);
+
+app.get("/", (req, res) => {
+  res.send("✅ LMS backend is running successfully!");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is Listening to the PORT: ${PORT}`);
+});
