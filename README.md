@@ -43,24 +43,6 @@
 
 ---
 
-## 🔐 Environment Variables
-
-Create a `.env` file in the backend root with:
-
-```env
-PORT=8080
-MONGO_URI=your_mongo_uri
-SECRET_KEY=your_secret_key
-
-# Cloudinary
-CLOUD_NAME=your_cloud_name
-API_KEY=your_cloudinary_api_key
-API_SECRET=your_cloudinary_api_secret
-
-# Stripe
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-```
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
@@ -100,6 +82,67 @@ You're all set! With both the backend and frontend running, you can now view the
 Open your browser and go to: **http://localhost:5173**
 
 ---
-## Contact
+## 📁 Project Structure
+
+```bash
+├── client
+    ├── .gitignore
+    ├── README.md
+    ├── components.json
+    ├── eslint.config.js
+    ├── index.html
+    ├── jsconfig.json
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    ├── src
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── app
+    │   ├── components
+    │   ├── features
+    │   ├── index.css
+    │   ├── layout
+    │   ├── lib
+    │   ├── main.jsx
+    │   └── pages
+    └── vite.config.js
+└── server
+    ├── .gitignore
+    ├── controllers
+    ├── database
+    ├── index.js
+    ├── middlewares
+    ├── models
+    ├── package-lock.json
+    ├── package.json
+    ├── routes
+    ├── uploads
+    └── utils
+```
+
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the backend root with:
+
+```env
+PORT=8080
+MONGO_URI=your_mongo_uri
+SECRET_KEY=your_secret_key
+
+# Cloudinary
+CLOUD_NAME=your_cloud_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_api_secret
+
+# Stripe
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+```
+
+
+---
+## 🖂 Contact
 
 For any inquiries, please contact Sreenu Yelesam at [srinuyelesam123@gmail.com](mailto:srinuyelesam123@gmail.com).
