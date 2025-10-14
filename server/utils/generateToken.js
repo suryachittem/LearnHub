@@ -10,7 +10,7 @@ export const generateToken = (res, user, message) => {
     .cookie("token", token, {
       httpOnly: true,
       secure: false, // ✅ required for cross-site cookies
-      sameSite: "None",
+      sameSite: "Lax",
       maxAge: 24 * 60 * 60 * 1000,
     })
     .json({
