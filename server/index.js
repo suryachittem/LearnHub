@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cookieParser());
 const allowedOrigins = [
-  "https://learnify-omega-rosy.vercel.app", // production
+  // production
   "http://localhost:5173", // local dev
 ];
 app.use(
@@ -37,7 +37,7 @@ app.use("/api/v1/course", courseRouter);
 app.use("/api/v1/purchase", purchaseCourseRouter);
 app.use("/api/v1/progress", courseProgressRouter);
 
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   res.send("✅ LMS backend is running successfully!");
 });
 
