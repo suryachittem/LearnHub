@@ -102,7 +102,9 @@ const Navbar = () => {
 
       {/* Mobile Device */}
       <div className="flex md:hidden items-center justify-between px-4 h-full">
-        <h1 className="font-extrabold text-2xl">E-Learning</h1>
+        <h1 className="font-extrabold text-2xl">
+          <Link to="/">E-Learning</Link>
+        </h1>
         <MobileNavbar user={user} />
       </div>
     </div>
@@ -144,7 +146,11 @@ const MobileNavbar = ({ user }) => {
         <nav className="flex flex-col space-y-4 mt-4">
           <Link to="/my-learning">My Learning</Link>
           <Link to="/profile">Edit Profile</Link>
-          <Button onClick={() => navigate("/login")}>Log out</Button>
+          {user ? (
+            <Button onClick={logoutHandler}>Log out</Button>
+          ) : (
+            <Button onClick={() => navigate("/login")}>Login</Button>
+          )}
         </nav>
 
         {/* Footer aligned at bottom */}
