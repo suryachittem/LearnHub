@@ -105,7 +105,7 @@ const Navbar = () => {
         <h1 className="font-extrabold text-2xl">
           <Link to="/">E-Learning</Link>
         </h1>
-        <MobileNavbar user={user} />
+        <MobileNavbar user={user} logoutHandler={logoutHandler} />
       </div>
     </div>
   );
@@ -113,7 +113,7 @@ const Navbar = () => {
 
 export default Navbar;
 
-const MobileNavbar = ({ user }) => {
+const MobileNavbar = ({ user, logoutHandler }) => {
   const navigate = useNavigate();
   return (
     <Sheet>
