@@ -16,6 +16,7 @@ import EditLecture from "./pages/admin/lectures/EditLecture";
 import CourseDetails from "./pages/student/CourseDetails";
 import CourseProgress from "./pages/student/CourseProgress";
 import SearchPage from "./pages/student/SearchPage";
+//for search page
 import {
   AdminRoute,
   AuthenticatedUser,
