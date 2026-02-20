@@ -146,4 +146,10 @@ STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
 
 ## 🖂 Contact
 
-For any inquiries, please contact Abdul Hanif Shaik at [shaikhanif2004@gmail.com](mailto:shaikhanif2004@gmail.com).
+For any inquiries regarding this project, please contact any of the following team members:
+
+- **Abdul Hanif Shaik** – [shaikhanif2004@gmail.com](mailto:shaikhanif2004@gmail.com)
+- **Srinu Yelesam** – [srinuyelesam123@gmail.com](mailto:srinuyelesam123@gmail.com)
+- **Surya Chittem** – [suryachittem80@gmail.com](mailto:suryachittem80@gmail.com)
+- **Vamsi Krishna Pedapapa** – [vamsikrishna.pedapapa.05@gmail.com](mailto:vamsikrishna.pedapapa.05@gmail.com)
+- **Kavya Parri** – [kavyaparri@gmail.com](mailto:kavyaparri@gmail.com)
