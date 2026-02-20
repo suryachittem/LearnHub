@@ -28,7 +28,7 @@ app.use(
   cors({
     origin: allowedOrigins,
     credentials: true,
-  })
+  }),
 );
 app.use(cookieParser());
 
@@ -42,7 +42,7 @@ app.use("/api/v1/progress", courseProgressRouter);
 app.use(express.static(path.join(_dirname, "/client/dist")));
 
 app.get("/", (_, res) => {
-  res.send("✅ LMS backend is running successfully!");
+  res.send("LMS backend is running successfully!");
 });
 
 app.listen(PORT, () => {
