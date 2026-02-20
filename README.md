@@ -1,6 +1,6 @@
-# 🎓 Learnify – Full-Stack Learning Management System (LMS)
+# 🎓 LearnHub – Full-Stack Learning Management System (LMS)
 
-> **Learnify** is a full-stack Learning Management System (LMS) built using the **MERN stack**.  
+> **LearnHub** is a full-stack Learning Management System (LMS) built using the **MERN stack**.  
 > It enables instructors to create and manage courses while allowing students to enroll, learn, and track progress — all within a clean, responsive, and secure environment.
 
 ---
