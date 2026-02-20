@@ -1,3 +1,4 @@
+//This file sets up the Redux store for the application, integrating various API slices and initializing the app by loading the user data.
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./rootReducer";
 import authApi from "@/features/api/authApi";
@@ -12,13 +13,13 @@ export const appStore = configureStore({
       authApi.middleware,
       courseApi.middleware,
       purchaseApi.middleware,
-      courseProgressApi.middleware
+      courseProgressApi.middleware,
     ),
 });
 
 const initializeApp = async () => {
   await appStore.dispatch(
-    authApi.endpoints.loadUser.initiate({}, { forceRefetch: true })
+    authApi.endpoints.loadUser.initiate({}, { forceRefetch: true }),
   );
 };
 
